@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <div class="header-background">
+        <img src="F:\Downloads\paperbg.png" alt="Header Background Image"
+            style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="container">
+        <h2>Exam</h2>
+        <form id="exam-form" action="submit_exam.php" method="post">
+            <div class="question">
+                <p>1. What is the correct syntax to declare an array named numbers of integers in C++?</p>
+                <input type="radio" name="q1" value="int numbers[]">int numbers[]<br>
+                <input type="radio" name="q1" value="int[] numbers">int[] numbers<br>
+                <input type="radio" name="q1" value="int numbers[]">int numbers[]<br>
+                <input type="radio" name="q1" value="int numbers[10]">int numbers[10]<br>
+            </div>
+            <div class="question">
+                <p>2. In Java, how do you access the third element in an array named 'arr'?</p>
+                <input type="radio" name="q2" value=" arr[3]">arr[3]<br>
+                <input type="radio" name="q2" value="arr(3)">arr(3)<br>
+                <input type="radio" name="q2" value="arr[2]">arr[2]<br>
+                <input type="radio" name="q2" value="arr.get(2)">arr.get(2)<br>
+            </div>
+            <div class="question">
+                <p>4. What is the time complexity of accessing an element in an array by index?</p>
+                <input type="radio" name="q4" value="O(1)">  O(1)<br>
+                <input type="radio" name="q4" value="O(n)"> O(n)<br>
+                <input type="radio" name="q4" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q4" value=" O(n^2)">  O(n^2)<br>
+            </div>
+            <button type="button" name="submit" onclick="submitExam()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
